@@ -12,7 +12,7 @@ namespace SyrkinLab1
         static void Main(string[] args)
         {
             
-                Console.WriteLine(Taylor(1,3));
+                Console.WriteLine(MultiplyBy3(3));
             
         }
 
@@ -26,6 +26,11 @@ namespace SyrkinLab1
             }
 
             return Result;
+        }
+
+        static double MultiplyBy3(double n)
+        {
+            return n * 3;
         }
 
         static double Procedure(double x)//Задание 2
