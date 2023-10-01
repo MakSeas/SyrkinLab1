@@ -57,7 +57,7 @@ namespace SyrkinLab1
         {
             double result = 1;
 
-            int Digits=0;
+            int Digit=0;
             int PastDigits=1;
 
             ulong k=0;
@@ -65,13 +65,13 @@ namespace SyrkinLab1
             while(true)
             {
                 result+=(Math.Pow(x,k)/Factorial(k));
-                Digits = (int)(result * Math.Pow(10, n)/1);
+                Digit = (int)(result * Math.Pow(10, n)/1);
 
-                if(Digits==PastDigits) break;
+                if(Digit==PastDigits) break;
 
-                PastDigits = Digits;
+                PastDigits = Digit;
 
-                Console.WriteLine($"{result} || {Digits}");
+                Console.WriteLine($"{result} || {Digit}");
 
                 k++;
             }
